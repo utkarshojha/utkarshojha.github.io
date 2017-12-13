@@ -95,7 +95,7 @@
                   <b>NAG : Network for Adversary Generation</b><br>
                   Konda Reddy Mopuri*, <strong>Utkarsh Ojha*</strong>, Utsav Garg, R. Venkatesh Babu <br><br>
                   Adversarial perturbations can pose a serious threat for deploying machine learning systems. Recent works have shown existence of image-agnostic perturbations that can fool classifiers over most natural images. Existing methods present optimization approaches that solve for a fooling objective with an imperceptibility constraint to craft the perturbations. However, for a given classifier, they generate one perturbation at a time, which is a single instance from the manifold of adversarial perturbations. Also, in order to build robust models, it is essential to explore the manifold of adversarial perturbations. In this paper, we propose for the first time, a generative approach to model the distribution of adversarial perturbations. The architecture of the proposed model is inspired from that of GANs and is trained using fooling and diversity objectives. Our trained generator network attempts to capture the distribution of adversarial perturbations for a given classifier and readily generates a wide variety of such perturbations. Our experimental evaluation demonstrates that perturbations crafted by our model (i) achieve state-of-the-art fooling rates, (ii) exhibit wide variety and (iii) deliver excellent cross model generalizability. Our work can be deemed as an important step in the process of inferring about the complex manifolds of adversarial perturbations.<br>  
-                   
+                  <br> 
                   <a href="https://arxiv.org/abs/1712.03390">[arxiv]  </a> <a href="http://val.serc.iisc.ernet.in/nag/">[project page]  </a> <a href="https://utkarshojha.github.io/">[code (coming soon)]
     </a>
         </a></td>
@@ -112,7 +112,8 @@
   
                   <b>Compression Artifacts Reduction using Generative Adversarial networks</b><br>
                   <strong>Utkarsh Ojha</strong>, Nithish Divakar <br>
-                   
+                  <br>
+                  In this work we attempted to extend the idea of <a href="https://arxiv.org/abs/1609.04802">SRGAN </a> paper by using generative adverssarial networks to remove JPEG compression artifacts in images. The goal was to go beyond using PSNR value as a metric, and reconstruct the images in a way that humans find it visually more appealing. Our work does produce reasonably good looking reconstructed images, though it doesnt beat current state-of-the-art in terms of PSNR/SSIM.  
                   <a href="https://github.com/utkarshojha/compression-artifacts-reduction">[code]</a> <a href="https://docs.google.com/presentation/d/1N9nXgsGbRo8jLkuHn3IJd1D1Eg3fn0khEbYEnuChiR4/edit?usp=sharing">[slides]</a>
     </p>
         </td>
@@ -125,10 +126,11 @@
         <td width="75%" valign="top">
     <p>
   
-                  <b>Generative Adversarial Motion to Image Synthesis</b><br>
-                  Arna Ghosh*, <strong>Kumar Krishna Agrawal*</strong><br>
-                  <i>ECCV Workshop on Artificial and Biological Vision</i>, 2016 <br> 
-                  <a href="https://kumarkrishna.github.io/coming%20soon">[paper]</a>
+                  <b>Denoising high resolution multispectral images</b><br>
+                  <strong>Utkarsh Ojha</strong>, Ankur Garg<br><br>
+                  In this paper we address the image denoising problem specifically for high resolution multispectral images. We explore the possibility to device a method that approximates the denoising function using the ideology of learning from data. The overall objective is to build a model that replicates the denoised results of Non-local means algorithm using far less computational resources for each of the four spectral bands (blue, green, red and near infrared). We have used deep neural networks and in particular stacked autoencoders to learn the function that maps a noisy image to its denoised version. We show that after training the model on a large set noisy and denoised images, excellent results that are comparable to the results of Non-local means algorithm can be obtained in much less computational time. The scope of the model can further be extended to denoise any other natural image by training it on the appropriate data set.
+                  <i>In proceedings of ICMLA 2016</i>, 2016 <br> 
+                  <a href="http://ieeexplore.ieee.org/document/7838260/">[paper]</a> <a href="https://github.com/utkarshojha/image-denoising">[code]</a> 
     </p>
         </td>
       </tr>
