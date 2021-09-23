@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utkarsh Ojha</title>
+        <link rel = "icon" type = "image/png" href = "resources/uwmlogo.png">
+    </head>
+    <body>
+        <style>
+            img {
+                width: 150px;
+                border-radius: 6px;
+                border: 1px solid #555;
+                margin-left: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-top: 80px;
+            }
+            h1{
+                font-family: Helvetica, sans-serif;
+                font-size: 40px;
+                font-weight: 100;
+                margin-left: 200px;
+                margin-top: -210px;
+                color: rgb(77, 77, 77);
+            }
+            h1.projects{
+                font-family: Helvetica, sans-serif;
+                font-size: 40px;
+                font-weight: 100;
+                margin-left: 20px;
+                margin-top: 70px;
+                color: rgb(77, 77, 77);
+            }
+
+            p.intro{
+                font-family: Helvetica, sans-serif;
+                color: dimgray;
+                margin-left: 200px;
+                margin-right: 20px;
+                
+            }
+            p.proj_desc{
+                font-family: Helvetica, sans-serif;
+                color: dimgray;
+                margin-left: 0px;     
+                margin-right: 20px;
+            }
+            li{
+                font-family: Helvetica, sans-serif;
+                color: dimgray;
+                margin-left: 0px;
+                
+            }
+            .center{
+                background-color: rgb(235, 239, 247);
+                width: 1000px;
+                height: 1000px;
+                margin: auto;
+                border: 1px solid #555;
+                border-radius: 6px; 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            a:link {
+                text-decoration: none;
+                color: rgb(104, 148, 238);
+            }
+            a:visited {
+                color: rgb(104, 148, 238);
+            }
+            a:hover {
+                color: rgb(143, 142, 142);
+            }
+        </style>
+        <div class="center">
+        
+            <img src="resources/utkarsh_bw.jpg" alt="c'mon, check the path browski">
+            <h1>Utkarsh Ojha</h1>
+            <p class="intro"> CS PhD student &bull; University of Wisconsin-Madison</p>
+            <p class="intro"><a href = "mailto:uojha@wisc.edu">Email</a> &bull; <a href="https://scholar.google.com/citations?user=QGdSgfoAAAAJ&hl=en">Google scholar</a> &bull; <a href="https://github.com/utkarshojha">Github</a> &bull; <a href="https://drive.google.com/file/d/1yzko1zXRuazaQOiYLH4cJcq0vpDd7sIB/view?usp=sharing">CV</a> &bull; <a href="https://twitter.com/utkarshojha12">Twitter</a></p>
+            <p class="intro">I am a third year PhD student at UW Madison, working with <a href="https://pages.cs.wisc.edu/~yongjaelee/">Dr. Yong Jae Lee</a>. My past work has explored generative models for computer vision tasks. In general, my philosophy is to view this class of algorithms as a tool to help us go outside the training distribution, and generate something we don't already have. Following is a list of the projects I've done so far:</p>
+            <br>
+            <ul>
+                <li> <a href="https://utkarshojha.github.io/few-shot-gan-adaptation/">Few-shot Image Generation via Cross-domain Correspondence</a></li>
+                <p class="proj_desc">If you have 1000s of images from a domain (e.g. human faces), you can typically train a big neural network to generate images resembling its properties. What if you don't have that luxury? What if you only have, say 10 paintings from an artist, and want to <i>generate</i> more? That is the goal of this work: model a bigger distribution of a domain using extremely few training images from it.</p>
+                <!-- <p class="proj_desc"><b>Authors:</b> Utkarsh Ojha, Yijun Li, Jingwan Lu, Alexei A. Efros, Yong Jae Lee, Eli Shechtman, Richard Zhang</p>
+                <p class="proj_desc"><b>Publication:</b> Computer Vision and Pattern Recognition 2021</p> -->
+                <li> <a href="https://utkarshojha.github.io/inter-domain-gan/">Generating Furry Cars: Disentangling Object Shape and Appearance across Multiple Domains</a></li>
+                <p class="proj_desc">Let's say you have data which contains images from not one, but multiple object categories (e.g. dogs and cars). Can you learn a generative model which can still disentangle object shape and its appearance? We proposed a method for this task, where upon learning such a model, we can take the appearance of a furry dog, and transfer it onto a car to create a new species of furry cars.</p>                 
+                <!-- <p class="proj_desc">FineGAN (see below) is a method that works well in terms of disentangling the object shape from its appearance <i>within a domain</i>, e.g. transferring the appearance of a sparrow (a bird) onto a duck (another bird). However, it starts having issues when the training data contains more than one object category (e.g. birds and cars). In this project, we proposed a much more general method to learn disentangled representations of object shape and appearance. You could take the appearance of a furry dog, and transfer it onto a car (a completely different domain) to generate a brand new species of furry car.</p> -->
+                <!-- <p class="proj_desc"><b>Authors:</b> Utkarsh Ojha, Krishna Kumar Singh, Yong Jae Lee</p>
+                <p class="proj_desc"><b>Publication:</b> International Conference on Learning Representations 2021</p> -->
+                <li> <a href="https://utkarshojha.github.io/elastic-infogan/">Elastic-InfoGAN: Unsupervised Disentangled Representation Learning in Class-Imbalanced Data</a></li>
+                <p class="proj_desc">When your data has discrete object categories, a typical assumption for the discrete factors is a uniform multinomial distribution. What happens when the data has a class imbalance? We highlight the shortcomings of existing work in such scenarios, and propose a method which disentangles the discrete factor much more accurately without access to the ground-truth distribution.</p>
+                <!-- <p class="proj_desc"><b>Authors:</b> Utkarsh Ojha, Krishna Kumar Singh, Yong Jae Lee</p>
+                <p class="proj_desc"><b>Publication:</b> Neural Information  2021</p> -->
+                <li> <a href="https://github.com/Yuheng-Li/MixNMatch">MixNMatch: Multifactor Disentanglement and Encoding for Conditional Image Generation</a></li>
+                <p class="proj_desc">Let's say you captured two pictures, one of a red sparrow, and another of a white swan. You're feeling creative, and want to imagine how that white swan would look with that red sparrow's appearance over it. MixNMatch does precisely that: it takes in <i>real</i> images, and extracts the object's shape and appearance independently, and combine them to create a hybrid bird: a red swan.</p>
+                <li> <a href="http://krsingh.cs.ucdavis.edu/krishna_files/papers/finegan/index.html">FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery</a></li>
+                <p class="proj_desc">Imagine a collection of natural birds. The goal in this project was to have a model which generates realistic images, and also learns to control its different properties. For example, the proposed method learns to control object shape, appearance, pose, background - without any supervision. We could now borrow the appearance of a colorful hummingbird, and put it over the body of a seagull. </p>
+                <li> <a href="https://github.com/val-iisc/nag">NAG: Network for Adversary Generation</a></li>
+                <p class="proj_desc">Universal adversarial perturbation describes an image-agnostic noise pattern, which when added to any natural image will fool a neural network based classifier. We proposed a method to generate not one, but a distribution of such noise images for a neural network. These were much stronger in terms of fooling not just the targeted classifier, but also many unseen ones.</p>
+                
+            </ul>
+        </div>
+    </body>
+</html>
